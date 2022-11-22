@@ -1,0 +1,44 @@
+\section{Papers:}
+
+
+\subsection{Taming Transformers for High-Resolution Image Synthesis}    
+
+\subsection{EmotionSense: Emotion Recognition Based on Wearable Wristband}
+They measure blood volume pause, electrodermal activity, and skin temperature. Basically GSR and heartbeat.
+Show participants videos to induce emotions for data collection. 
+A questionnaire is designed to record the emotion status of participants, which can be used as the ground-truth for emotion detection.
+They use \textit{Sequence forward floating selection (SFFS)} to search for the best emotion-related features, and classify the different emotions using an SVM.
+They got an overall accuracy of 76\% for 15 participants.
+The signal values are normalized to remove noise and overcome individual differences between participants.
+Emotions are categorised based on their high and low valence and arousal. \cite{EmotionSense}
+
+\subsection{Using Electrodermal Activity Measurements to Understand
+Student Emotions While Programming} \cite{10.1145/3501385.3543981}.
+Using electrodermal activity sensors (EDA) followed by a retrospective interview, the paper identified 21 distinct events that triggered student emotions while programming. The emotions ranged from anxiety to a calmer state of emotion.
+
+\subsection{Recognizing Emotion from Blood Volume Pulse and Skin Conductance Sensor Using Machine Learning Algorithms} There has been progress in determining emotional states in humans using biosensors, e.g. by using blood volume pulse and skin conductance sensors. Experiments with this combination of sensors was recently conducted, and an algorithm that could determine emotional states such as sad, dislike, joy, stress and normal. Their model yielded an accuracy of approximately 92\%.
+\cite{RecognizingEmotion}
+
+\subsection{High-Resolution Image Synthesis with Latent Diffusion Models (stable diffusion)}
+Introduces Latent Diffusion Models LDM's for efficient training of diffusion models.
+
+
+\cite{stablediffusion}
+
+\subsection{VQGAN and CLIP}
+
+Main contributions:
+     use CNNs to learn a context-rich vocabulary of image constituents
+      utilize transformers to efficiently model their composition within high-resolution images
+
+They proposed an approach which represents images as a composition of perceptually rich image constituents and thereby overcomes the infeasible quadratic complexity when modeling images directly in pixel space. 
+In experiments, their approach demonstrates the efficiency of convolutional inductive biases and the expressivity of transformers by synthesizing images in the megapixel range and outperforming state-of-the-art convolutional approaches.
+
+Their approach uses a convolutional VQGAN to learn a codebook of context-rich visual parts, whose composition is subsequently modeled with an autoregressive transformer architecture. A discrete codebook provides the interface between these architectures and a patch-based discriminator enables strong compression while retaining high perceptual quality. This method introduces the efficiency of convolutional approaches to transformer based high resolution image synthesis.
+    - "To do so, we propose VQGAN, a variant of the original VQVAE, and use a discriminator and perceptual loss"
+    - "More specifically, we replace the L2 loss used in [72] for Lrec by a perceptual loss and introduce an adversarial training procedure with a patch-based discriminator D [28] that aims to differentiate between real and reconstructed images" 
+
+
+Take away:
+Denne artikel er muligvis relevant hvis vi vil prøve selv at kombinere en VQ-GAN med noget CLIP (seller noget andet). Her vil dette VQGAN skulle sammenlignes med andre VQ-GANS.
+\cite{}

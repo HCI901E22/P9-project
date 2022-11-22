@@ -1,0 +1,28 @@
+\chapter{Method}
+\section{Emotional model}\label{sec:emotionalModel}
+Much research has gone into identifying, eliciting and evaluating emotions.\\\\
+Izard et. al. has identified 10 core discrete emotional states, interest, joy, surprise, sadness, anger, disgust, contempt, fear, shame and guilt, forming the Differential Emotions Scale (DES) \cite{des-boyle, humanemotionsIzard}. This model has since been iterated and improved upon. Latest the DES-IV expaneded to include shyness and self-hostility \cite{desiv,desivBoyle}.\\\\
+Ekman recognizes 6 basic emotions, anger, fear, sadness, enjoyment, disgust and surprise. Ekman bases this on his nine characteristics for identifying and distinguishing emotions. He also recognises that each of his six basic emotions are head of a family of related emotions \cite{ekman1992argument}.\\\\
+Alternatively, Russel has made the ground work of mapping up to 28 emotions to the two-dimensional, continuous arousal-valence space. This mapping is based on the physiological processes related to each emotion as they are experienced \cite{ValArouModelOrg}. Many emotion detection models build on this including  \cite{RecognizingEmotion, EmotionSense, BioSignalsEmotionModel} as discussed in \cref{sec:recogEmotions}.\\\\
+Based on this we have decided on the following 8 emotional states:
+\begin{itemize}
+    \item Anger
+    \item Fear
+    \item Disgust
+    \item Sadness
+    \item Joy
+    \item Surprise
+    \item Relaxed
+    \item Neutral
+\end{itemize}
+
+These are mapped to the valence-arousal space according to \cref{fig:VAinit}. The emotions shown on the figure would not be as ordered as displayed. In reality, the emotions would have some overlap, but in order to make a definite decision, a clear cut approximation has been made.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/va16model.png}
+    \caption{Initial valence-arousal model}
+    \label{fig:VAinit}
+\end{figure}
+
+\input{Datasets.tex}

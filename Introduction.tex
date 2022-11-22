@@ -1,0 +1,46 @@
+\chapter{Introduction}
+% - Introduce the fact that movies are able to evoke emotions. (Some motivation)
+Throughout the last couple of decades, the film industry has raised its worldwide market revenue from 19.6 to 41.7 billion dollars. 
+%https://www.statista.com/statistics/260198/filmed-entertainment-revenue-worldwide-by-region/
+This increase is a product of many different factors within the industry, such as the availability of media and the technology available to create new media. Since a big part of the film industry is to evoke some emotional journey within the audience \cite{EmotionsWatchingMovies}, the technology that allows directors to do so becomes increasingly valuable. Many movies has CGI created characters, scenery and/or visual effects, and the quality of CGI is a factor of how well we perceive the movie. CGI is ultimately an attempt to assist in telling a visual story \cite{}, where well-done CGI does not bring the viewer out of immersion, but instead entices the viewer with understandable or even relatable characters, scenery or effects. An example of this phenomenon is why we enjoy some but not all CGI generated animals in movies. We prefer movies where we relate to the animals, which happens when we perceive them as humans \cite{}. 
+\\ \\
+The task of employing well done computer generated images is therefore dependent on understanding human psychology and emotions, because the emotions sought after by the movie makers have to match the viewers emotional experience.
+%Måske kunne dette ændres til at snakke om at der også eksistere firmaer, som vil prøve at optimere den emotionelle jounery i en film, såsom cinematronic.   
+New companies aim to optimize the emotional experience in new ways that have not been tried before. An example is Cinematronic \cite{}, which aims to offer a biosensor-based solution for analyzing viewer experience for media productions. They facilitate quality assurance for producers and directors in creating the best possible viewer experience.
+% Herefter kunne APEX of fear hurtigt nævnes. På denne måde kan man gå over i at disse firmaer afhænger af at man er istand til at måle på følelser.
+\\ \\
+Solutions where immediate biometric data is measured is also starting to make its appearance in other industries, such as the gaming industry. For instance, in this industry the Affective Player Experience of Fear (APEX of Fear) is a research project, that aims to be able to optimize the user experience of VR horror. More specifically, the project uses psychophysiological measures and machine learning to create a horror experience that will be interactive and personalized so that the horror simulation is adapted to the individual's own fear. 
+Common to this and Cinematronics' solutions is that they both intend to measure biometric data of the audience. 
+% - Introduce how emotions are measured
+Emotions can be measured using different biometric readings. 
+Equipment used to record skin conductance using electrodermal activity (GSR), heart rate using photoplethysmogram (PPG) and electroencephalogram (EEG) recording of brain activity is used in research to measure emotional state \cite{}.
+%Uddyb EEG
+EEG is measured using small sensors which are attached to the scalp, and
+%Uddyb PPG
+%Uddyb ECG
+While techniques such as EEG are not easily available to the public, techniques such as PPG and EEG is becoming increasingly integrated into everyday wearables such as the apple watch. 
+% - Such emotions can increasingly be measured by wearables. 
+
+
+
+% - Introduce how emotions are measured
+% - Briefly touch upon the possibility of combining the concept of measuring emotions and watching movies
+% - Introduce emotion detection
+% - Briefly introduce image detection
+% - Introduce user-profiles
+% - Introduce the combination of object detection and emotion detection to create user profiles
+% - Introduce GANS and the possibility to generate media data.
+% - End by stating what this paper will contribute
+    % - Emotion detection, object detection, user-profile construction and generating video
+
+
+
+Emotions are reactions that human beings experience in response to events or situations. The type of emotion that is triggered, is dependent on the persons own experiences and circumstances, thus the same stimuli can trigger different emotions in different people \cite{ekmanEmotions}. This creates challenges in detecting emotions using computers, as it is hard to determine an event that will elicits a specific emotional response from a person. 
+Several experiments measuring and subsequently predicting emotions using bio-data sensors has been conducted. Experiments using sensors has been used on human subjects, whom were shown images, audiovisual clips, or had tasks to complete \cite{RecognizingEmotion}, \cite{EmotionSense}, \cite{BioSignalsEmotionModel}. The purpose of such experiments is to collect and analyse data, in order to be able to predict which emotion type, match a sample of bio data.
+\\ \\
+Using a model that can predict emotions real time during a viewing experience, would open up to the possibility of a personalized experience. Changing the content of media during a viewing experience with the intent of having the viewer enter a different emotional state, would require knowledge of their sympathetic responses, given that humans enter certain emotional states with varying levels of stimuli. Having the viewer wear physiological measuring devices would give access to their current emotional state through their biological response. However, changing the content of media in order to invoke an emotional change, would require a database of their emotional responses correlated to media content. Conducting experiments gathering bio data from willing participants would be the groundwork in training models for emotion detection and building an emotion database. 
+\\ \\
+Because different people react differently to certain emotions, it is necessary to collect the data in a lab environment to ensure the differences in emotional responses is not due to environmental factors. In order to eliminate noise in the data the experiments should ideally take place in the same room, with the same temperature and lighting. The results from the experiment is used to train a emotion recognizing model, which takes bio data as input and outputs a 2-dimensional valence-arousal model, where each emotion is placed in one of four quadrants.
+\\ \\
+This study is made in cooperation with Cinematronic, who is developing an interactive adaptive media system that automatically adjusts the audiovisual stimuli based on the users’ immediate needs. Because of this, we are limited in the different types of bio-metric data we can collect, using their equipment. The equipment is able to record skin conductance using electrodermal activity (GSR) and heart rate using photoplethysmogram (PPG).
+
