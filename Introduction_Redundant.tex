@@ -1,0 +1,67 @@
+\chapter{Introduction}
+% - Introduce the fact that movies are able to evoke emotions. (Some motivation)
+Since 2002 to 2020, the film industry has raised its worldwide market revenue from 19.6 to 41.7 billion dollars\cite{moviestats}. 
+This increase is a product of many different factors within the industry, such as the availability of media and the technology available to create new media. 
+Since a big part of the film industry is to evoke some emotional journey within the audience \cite{EmotionsWatchingMovies}, the technology that allows directors to do so becomes increasingly valuable. 
+%CGI part
+An example of such a technology is CGI, which is able to construct characters, scenery and/or visual effects in order to enhance the viewing experience. 
+CGI is ultimately an attempt to assist in telling a visual story \cite{CGIPurpose}, where well-done CGI does not bring the viewer out of immersion, but instead entices the viewer with understandable or even relatable characters, scenery or effects. 
+\\ \\
+%Måske kunne dette ændres til at snakke om at der også eksistere firmaer, som vil prøve at optimere den emotionelle jounery i en film, såsom cinematronic.   
+Other companies aim to optimize the emotional experience in new ways that have not been tried before. An example is Cinematronic \cite{cinematronic}, which offers a biosensor-based solution for analyzing viewer experience for media productions. They facilitate quality assurance for producers and directors in creating the best possible viewer experience.
+% Herefter kunne APEX of fear hurtigt nævnes. På denne måde kan man gå over i at disse firmaer afhænger af at man er istand til at måle på følelser.
+\\ \\
+Solutions where immediate biometric data is measured is also starting to make its appearance in other industries, such as the gaming industry. For instance, in this industry the Affective Player Experience of Fear (APEX of Fear) is a research project, that aims to be able to optimize the user experience of VR horror \cite{ApexOfFear}. More specifically, the project uses psychophysiological measures and machine learning to create a horror experience that will be interactive and personalized so that the horror simulation is adapted to the individual's own fear.
+Common to this and Cinematronics' solutions is that they both intend to measure biometric data of the audience. 
+\\ \\
+% - Introduce how emotions are measured
+Emotions can be inferred using different biometric readings \cite{RecognizingEmotion}.
+Equipment used to record skin conductance using electrodermal activity (GSR), heart rate using photoplethysmogram (PPG) and electroencephalogram (EEG) recording of brain activity has had recent advances inferring emotional state \cite{RecognizingEmotion}, \cite{EEGEmotion}, \cite{EmotionSense}.
+% - Introduce how emotions are measured
+EEG is measured using small sensors which are attached to the scalp and measures electric activity in the brain. PPG is measuring volumectric changes in blood using simple sensors. Likewise, ECG is a test that can be used to measure the rythm of the heart, using small sensors. 
+% - Such emotions can increasingly be measured by wearables. 
+While techniques such as EEG are not easily available to the public, techniques such as PPG and GSR is becoming increasingly integrated into everyday wearables such as the apple watch \cite{AppleWatch,gsrwatch} and Fitbit sense \cite{fitbitSense}. 
+% - Introduce emotion detection
+\\ \\
+Combining the concept of measuring biometric data with machine learning allows for the possibility to try and predict emotions of the user. Such attempts has been conducted in research such as \cite{CNNEmotionDetection}, where Lee et Al. used a Convolutional Neural Network to predict emotions using biometric readings. 
+% - Briefly touch upon the possibility of combining the concept of measuring emotions and watching movies in order to collect data. 
+Conducting such attempts requires datasets that consists of biometric readings which maps to emotions that the model aims to be able to predict. Attempts to construct such datasets exists different places on the internet. Such dataset varies in the way that they has been constucted. These datasets is often constructed using studies where a number of participants is conducting some task while the biometric data is collected. Such tasks can be very different, such as performing interactive tasks\cite{CLAS}, looking at pictures\cite{IAPS} or watching videos\cite{FilmClips}. 
+\\ \\
+% - Introduce user-profiles
+Being able to extract person-specific data, allows for the possibility of storing such information in user-profiles\cite{UserProfiling}.
+By using such user-profiles it can become possible to perform recommendation for the given user, based on the user profile\cite{InferringEmotionalState}. 
+% - Briefly introduce the combination of object detection and emotion detection to create user profiles
+We suspect that this notion can be carried over to the field of media and 
+be combined with emotion elicitation, such that user-profiles can be constructed based on emotion detection. Such profiles would store information about a given user's reactions to certain events or objects in media material.
+% - Briefly introduce object detection detection
+To this end, emotion detection would be required to be combined with object detection, in order to make such emotional connection between users and media occurrences\cite{WhatIsObjectDetection}.
+\\ \\
+% - Introduce generative deep learning and the possibility to generate media data.
+In order to test the usability of user-profiles to see if they are able to be used to optimize the emotional experience of a given user, we propose to combine the user-profiles with generative deep learning. This will enable us to test if we are able to evoke certain emotions within a user, by combining the knowledge of the given user's reaction to ocurrences with the ability to generate new media data. 
+% - End by stating what this paper will contribute
+    % - Emotion detection, object detection, user-profile construction and generating video
+\\ \\
+This paper aims to contribute with a method to generate user-specific video that is able to evoke a set of emotions within the given user. 
+Such a method will be achieved by constructing an emotion elicitation dataset by conducting a study, where a number of participants is watching some pre-selected video material. The dataset will be used in order to construct and train a convolutional neural network that will be used to detect emotions based on biometric data.
+Afterwards, the emotion detection model will be combined with object detection in order to construct user-profiles, using a second study where video material is used to construct user-profiles for a number of participants. Lastly, these user-profiles will then be combined with Generative Deep Learning in order try and generate some personalized video material. The personalized video will be tested in a third study, using the same participants from study two, if they are willing. 
+
+
+
+
+%Emotions are reactions that human beings experience in response to events or situations. The type of emotion that is triggered, is dependent on the persons own experiences and circumstances, thus the same stimuli can trigger different emotions in different people \cite{ekmanEmotions}. This creates challenges in detecting emotions using computers, as it is hard to determine an event that will elicits a specific emotional response from a person. 
+%Several experiments measuring and subsequently predicting emotions using bio-data sensors has been conducted. Experiments using sensors has been used on human subjects, whom were shown images, audiovisual clips, or had tasks to complete \cite{RecognizingEmotion}, \cite{EmotionSense}, \cite{BioSignalsEmotionModel}. The purpose of such experiments is to collect and analyse data, in order to be able to predict which emotion type, match a sample of bio data.
+%\\ \\
+%Using a model that can predict emotions real time during a viewing experience, would open up to the possibility of a personalized experience. Changing the content of media during a viewing experience with the intent of having the viewer enter a different emotional state, would require knowledge of their sympathetic responses, given that humans enter certain emotional states with varying levels of stimuli. Having the viewer wear physiological measuring devices would give access to their current emotional state through their biological response. However, changing the content of media in order to invoke an emotional change, would require a database of their emotional responses correlated to media content. Conducting experiments gathering bio data from willing participants would be the groundwork in training models for emotion detection and building an emotion database. 
+%\\ \\
+%Because different people react differently to certain emotions, it is necessary to collect the data in a lab environment to ensure the differences in emotional responses is not due to environmental factors. In order to eliminate noise in the data the experiments should ideally take place in the same room, with the same temperature and lighting. The results from the experiment is used to train a emotion recognizing model, which takes bio data as input and outputs a 2-dimensional valence-arousal model, where each emotion is placed in one of four quadrants.
+%\\ \\
+%This study is made in cooperation with Cinematronic, who is developing an interactive adaptive media system that automatically adjusts the audiovisual stimuli based on the users’ immediate needs. Because of this, we are limited in the different types of bio-metric data we can collect, using their equipment. The equipment is able to record skin conductance using electrodermal activity (GSR) and heart rate using photoplethysmogram (PPG).
+
+
+%APEX of fear
+Another example of this is the research project named Affective Player Experience of Fear (APEX of Fear), that aims to be able to optimize the user experience of horror in VR\cite{ApexOfFear}. 
+More specifically, the project uses psychophysiological measures and machine learning to create a horror experience that will be interactive and personalized so that the horror simulation is adapted to the individual's own fear.
+%How to measure emotions
+
+
+As sensory technology advances, getting more accurate readings from light sensor equipment becomes possible which allows everyday wearables to take advantage of biometric readings. Such biometric data could be used to give feedback such as metrics regarding physical activity, and emotional state.

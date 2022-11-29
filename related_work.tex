@@ -1,12 +1,46 @@
-\chapter{Related Work}
+\chapter{Related Work} \label{cap:relatedWork}
 In this chapter we review related work in determining human emotional states, by using software systems. As well as, reviewing related work in generating video.
-\section{Generation Video}
 
-\section{Recognizing emotions}\label{sec:recogEmotions}
-Recognizing emotions through software systems have improved in recent years. Researchers have conducted experiments measuring the emotional state of subjects, by analysing their speech \cite{SpeechEmotionRecognize}, their facial expressions \cite{FaceEmotionRecognize} or by using physiological devices measuring bio-data \cite{RecognizingEmotion, EmotionSense}. In a study by Rathod et al. \cite{BioSignalsEmotionModel} they showed 6 subjects audiovisual clips in order to induce emotions. They recorded the emotions of subjects using skin conductance and heart rate monitors, as well as recorded their facial expressions with a webcam. Their objective was for the facial recognizing and bio data monitoring to predict matching emotions. The average accuracy for neutral and happiness was 87\%, fear and sadness with 67\%, and lastly 83.13\% for anger. In another study by Khan et al. \cite{RecognizingEmotion} they implement a model that could predict 2 positive and 3 negative emotions given bio data. Their achieved accuracy ranges from 90\% to 98\%. It is hard to compare their accuracy, because their subjects, method and devices differ. However, it can be concluded that these methods used in aforementioned research can yield an accuracy that is high enough for us to take interest for our problem.
+%Theory about Emotions
+\section{Defining Emotions}\label{sec:defineEmotions}
+Much research has gone into identifying, eliciting and evaluating emotions.\\\\
+%What emotions exists?
+%How do they correlate to a space where they can be measured?
+Izard et. al. has identified 10 core discrete emotional states, interest, joy, surprise, sadness, anger, disgust, contempt, fear, shame and guilt, forming the Differential Emotions Scale (DES) \cite{des-boyle, humanemotionsIzard}. This model has since been iterated and improved upon. Latest the DES-IV expanded to include shyness and self-hostility \cite{desiv,desivBoyle}.\\\\
+Ekman recognizes 6 basic emotions, anger, fear, sadness, enjoyment, disgust and surprise. Ekman bases this on his nine characteristics for identifying and distinguishing emotions. He also recognises that each of his six basic emotions are head of a family of related emotions \cite{ekman1992argument}.\\\\
+Alternatively, Russel has made the ground work of mapping up to 28 emotions to the two-dimensional, continuous arousal-valence space. This mapping is based on the physiological processes related to each emotion as they are experienced \cite{ValArouModelOrg}.
+%Many emotion detection models build on this including  \cite{RecognizingEmotion, EmotionSense, BioSignalsEmotionModel} as discussed in \cref{sec:recogEmotions}.
+
+%Theory about emotion detection
+\section{Recognizing Emotions}\label{sec:recogEmotions}
+Recognizing emotions through software systems have improved in recent years. Researchers have conducted experiments measuring the emotional state of subjects, by analysing their speech \cite{SpeechEmotionRecognize}, their facial expressions \cite{FaceEmotionRecognize} or by using physiological devices measuring bio-data \cite{RecognizingEmotion, EmotionSense}. In a study by Rathod et al. \cite{BioSignalsEmotionModel} they showed 6 subjects audiovisual clips in order to induce emotions. They recorded the emotions of subjects using skin conductance and heart rate monitors, as well as recorded their facial expressions with a webcam. Their objective was for the facial recognizing and bio data monitoring to predict matching emotions. The average accuracy for neutral and happiness was 87\%, fear and sadness with 67\%, and lastly 83.13\% for anger. In another study by Khan et al. \cite{RecognizingEmotion} they implement a model that could predict 2 positive and 3 negative emotions given biometric data. Their achieved accuracy ranges from 90\% to 98\%. It is hard to compare their accuracy, because their subjects, method and devices differ. However, it shows that these methods used in aforementioned research can yield an accuracy that is high enough for us to take interest for our problem.
 \\ \\
-We will conduct experiments with the intention of collecting bio data, which we will include in a model to predict emotions. This model is then used as a tool in a video player setting, where we are interested in determining a viewers current emotional state while watching video. Beyond that we are interested in the ability to change the emotional state of a viewer, by introducing video that is supposed to elicit a specific emotion. Viewers will be wearing skin conductance and heart rate monitors as mentioned research.
+
+%Theory about User profiles
+\section{User profiling}
+User profiling is a way to collect information associated with a given user. Such profiles allow for the possibility to associate characteristics with users with respect to the information that resides inside the user profile. Different kinds of information can be stored inside user profiles, such as demographic and psychological information\cite{WhatIsUserProfiling}. 
+The information that is desired can differ, depending on the purpose of the user profiles. For instance, in Arapakis et al\cite{Arapakis}. the authors introduced a video search interface, that combines user facial expression with user-profiling. This is an example of how user-profiles can be used combined with machine learning, in order to solve a prediction problem. 
+We believe that this notion can be carried over to the field of emotions, in order to construct user profiles that contains information about different users' sentiment toward occurring objects and events in media material.
+
+%Theory about object detection
+\section{Object Detection}
+Object detection is a computer vision technique that is used for detecting and recognizing objects within a frame\cite{WhatIsObjectDetection}. Such technology is used within many fields, such as advanced driver assistance systems (ADAS) and in the media field. In Kang et al. the authors introduces a multi-stage pipeline for object detection in the video domain, in order to detect objects in video tubelets. The framework is working by combining still-image object detection with generic object. The method is tested against other solutions and outperformes each solutions by a large margin, aswell as a baseline set in the paper by. This is one example of the possibility to detect objects within videos, using object detection. Such a solution could be a potential candidate, that could be combined with an emotional detection model in order to create user profiles. 
+\\ \\
+In Li et al\cite{BLIP}. the authors is using a different kind of object detection called Vision-Language(VLP), which is transforming images into a textual format that describes the image for instance. 
+%https://openaccess.thecvf.com/content_cvpr_2016/papers/Kang_Object_Detection_From_CVPR_2016_paper.pdf
+%https://www.mathworks.com/discovery/object-detection.htm
+
+%Theory about Generative Deep Learning
+\section{Generation Video}
+%https://arxiv.org/pdf/2103.05180.pdf
+%https://imagen.research.google/video/paper.pdf
+%https://arxiv.org/pdf/2112.10752.pdf
+
+
+%We have conducted experiments with the intention of collecting bio data, which we included in a model to predict emotions. This model is supposed to be used as a tool in a video player setting, where we are interested in determining a viewers current emotional state while watching video. Beyond that we are interested in the ability to change the emotional state of a viewer, by introducing video that is supposed to elicit a specific emotion. Viewers will be wearing skin conductance and heart rate monitors as mentioned research.
+
 %Researchers used physiological devices to determine emotions such as happy. Typical devices used are EEG \cite{EEGEmotion}, GSR \cite{GSR_Article} and PPG \cite{PPG_Article} or ECG \cite{BVP_Article}. Each of the devices have their pros and cons. For the EEG, the biggest downside is inconvenience of wearing it, however a classifier can be very accurate using EEG, up to 98.20\% in recent study \cite{EEGEmotion}. Data provided by a GSR provides a reading of the subjects' arousal, which means its close to impossible to recognize emotions solely with GSR \cite{RecognizingEmotion}. With this in mind, researchers have used GSR in combination with other devices, e.g. BVP \cite{BVP_Article} devices. Using these two bio sensors, researchers were able to achieve an accuracy of 92\% for the emotion categoires; Sad, Dislike, Joy and Stress. In other studies, researches collected data from "blood volume pulse" (BVP), "electromyogram" (EMG) \cite{EMG_Article}, “respiration”(PPG) and “skin conductance sensor”(GSR). They conducted experiments on 20 participants over 20 days, yielding a 81\% classification accuracy for 8 emotion categories (neutral, anger, hate, grief, love, romantic, joy and reverence) \cite{Experiment8EmotionCategories}.  
 
 %\section{Generating Video}
 
+ 
